@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 const express = require('express');
 const app = express();
 const s3 = new AWS.S3();
-const BUCKET_NAME = 'ncuenta2-tmp-avatars';
+const BUCKET_NAME = 'my-bucket';
 const GET_EXPIRES = 100;
 const PUT_EXPIRES = 100;
 
