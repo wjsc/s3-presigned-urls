@@ -13,7 +13,7 @@ const getSignedURL = (operation, Key, Expires) => s3.getSignedUrl(operation, {
     Expires
 });
 
-app.get('/avatar/url/read', (req, res) => {
+app.get('/avatar/url/get', (req, res) => {
   const client_id = 123;
   res.status(200).json({url: getSignedURL('getObject', getAvatarKey(client_id), GET_EXPIRES)});
 });
